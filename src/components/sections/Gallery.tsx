@@ -1,5 +1,5 @@
-import { gymConfig } from "@/config/gym";
-import { Reveal } from "@/components/Reveal";
+import { gymConfig } from "../../config/gymConfig";
+import Reveal from "../Reveal";
 
 export default function Gallery() {
   return (
@@ -21,7 +21,7 @@ export default function Gallery() {
               className="group relative aspect-square overflow-hidden rounded-xl shadow-card-soft"
             >
               <img
-                src={src}
+                src={src.src}
                 alt={`Foto da academia ${i + 1}`}
                 loading="lazy"
                 width={1024}

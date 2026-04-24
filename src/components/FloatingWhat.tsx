@@ -1,5 +1,5 @@
 import { MessageCircle } from "lucide-react";
-import { whatsappLink } from "@/config/gym";
+import { whatsappLink } from "../config/gymConfig";
 
 export default function FloatingWhatsApp() {
   return (

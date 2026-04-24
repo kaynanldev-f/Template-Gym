@@ -1,6 +1,6 @@
-import { gymConfig } from "@/config/gym";
+import { gymConfig } from "../../config/gymConfig";
 import { Check } from "lucide-react";
-import { Reveal } from "@/components/Reveal";
+import Reveal from "../Reveal";
 
 export default function About() {
   return (

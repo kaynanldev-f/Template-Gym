@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { gymConfig, whatsappLink } from "@/config/gym";
+import { gymConfig, whatsappLink } from "../../config/gymConfig";
 import { Check } from "lucide-react";
+import Button from "../Button";
 
 export default function Plans() {
   return (
@@ -53,12 +53,7 @@ export default function Plans() {
                   </li>
                 ))}
               </ul>
-              <Button
-                asChild
-                variant={plan.featured ? "navy" : "cta"}
-                size="lg"
-                className="w-full"
-              >
+              <Button>
                 <a
                   href={whatsappLink(
                     `Olá! Tenho interesse no plano ${plan.name} (R$ ${plan.price}${plan.period}).`,

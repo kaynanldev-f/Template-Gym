@@ -1,7 +1,10 @@
+"use client";
+
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
-import { gymConfig, whatsappLink } from "@/config/gym";
+
+import { gymConfig, whatsappLink } from "../config/gymConfig";
 import { Menu, X } from "lucide-react";
+import Button from "./Button";
 
 const links = [
   { label: "Sobre", href: "#sobre" },
@@ -46,7 +49,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <Button asChild variant="cta" size="sm">
+          <Button>
             <a href={whatsappLink()} target="_blank" rel="noopener noreferrer">
               Matricule-se
             </a>
@@ -73,7 +76,7 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
-            <Button asChild variant="cta" size="sm">
+            <Button>
               <a
                 href={whatsappLink()}
                 target="_blank"

@@ -1,4 +1,4 @@
-import { gymConfig } from "@/config/gym";
+import { gymConfig } from "../../config/gymConfig";
 import { MapPin } from "lucide-react";
 
 export default function Location() {

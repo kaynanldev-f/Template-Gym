@@ -1,3 +1,14 @@
+import Navbar from "../components/Navbar";
+import About from "../components/sections/About";
+import Benefits from "../components/sections/Benefits";
+import CTAbanner from "../components/sections/CTAbanner";
+import Gallery from "../components/sections/Gallery";
+import Hero from "../components/sections/Hero";
+import Plans from "../components/sections/Plans";
+import Testimonials from "../components/sections/Testimonials";
+import Location from "../components/sections/Location";
+import Footer from "../components/sections/Footer";
+import FloatingWhatsApp from "../components/FloatingWhat";
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
@@ -6,7 +17,7 @@ export default function Home() {
       <About />
       <Plans />
       <Benefits />
-      <CTABanner
+      <CTAbanner
         title="Agende uma aula experimental grátis"
         subtitle="Conheça nossa estrutura, tire dúvidas e treine sem compromisso."
         buttonText="Quero minha aula grátis"
@@ -15,7 +26,7 @@ export default function Home() {
       <Gallery />
       <Testimonials />
       <Location />
-      <CTABanner
+      <CTAbanner
         title="Pronto pra começar a transformação?"
         subtitle="Fale com a gente agora pelo WhatsApp e garanta sua matrícula."
         buttonText="Quero começar hoje"

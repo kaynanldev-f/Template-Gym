@@ -1,6 +1,8 @@
+"use client";
+
 import { ReactNode } from "react";
-import { useReveal } from "@/hooks/use-reveal";
-import { cn } from "@/lib/utils";
+import { useReveal } from "../hooks/useReveal";
+import { cn } from "../lib/utils";
 
 interface RevealProps {
   children: ReactNode;

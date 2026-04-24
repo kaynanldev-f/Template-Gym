@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { gymConfig, whatsappLink } from "@/config/gym";
+import { gymConfig, whatsappLink } from "../../config/gymConfig";
 import { MessageCircle, ChevronDown, Star, Users, Trophy } from "lucide-react";
-
+import Button from "../Button";
 export default function Hero() {
   const words = gymConfig.hero.headline.split(" ");
   const lastWord = words.slice(-1)[0];
@@ -11,7 +10,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background image with slow zoom */}
       <img
-        src={gymConfig.hero.image}
+        src={gymConfig.hero.image.src}
         alt="Academia moderna com pessoas treinando"
         className="absolute inset-0 h-full w-full object-cover animate-slow-zoom"
         width={1920}
@@ -78,18 +77,13 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 items-center justify-center animate-fade-up"
           style={{ animationDelay: "0.3s" }}
         >
-          <Button asChild variant="cta" size="xl">
+          <Button>
             <a href={whatsappLink()} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="mr-2 h-6 w-6" />
               {gymConfig.hero.cta}
             </a>
           </Button>
-          <Button
-            asChild
-            size="xl"
-            variant="outline"
-            className="bg-transparent border-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground backdrop-blur-sm"
-          >
+          <Button variant="bg-transparent border-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground backdrop-blur-sm">
             <a href="#planos">Ver planos</a>
           </Button>
         </div>

@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { whatsappLink } from "@/config/gym";
+import { whatsappLink } from "../../config/gymConfig";
 import { MessageCircle } from "lucide-react";
+import Button from "../Button";
 
 interface CTABannerProps {
   title: string;
@@ -33,7 +33,7 @@ export default function CTAbanner({
             {subtitle}
           </p>
         )}
-        <Button asChild variant="cta" size="xl">
+        <Button>
           <a
             href={whatsappLink(message)}
             target="_blank"

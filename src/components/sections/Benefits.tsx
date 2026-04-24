@@ -1,4 +1,4 @@
-import { gymConfig } from "@/config/gym";
+import { gymConfig } from "../../config/gymConfig";
 import {
   Dumbbell,
   Flame,
@@ -6,7 +6,7 @@ import {
   UserCheck,
   type LucideIcon,
 } from "lucide-react";
-import { Reveal } from "@/components/Reveal";
+import Reveal from "../Reveal";
 
 const iconMap: Record<string, LucideIcon> = {
   Dumbbell,
