@@ -8,7 +8,7 @@ import heroGym from "../assets/hero-gym.jpg";
 export const gymConfig = {
   name: "Power Fit",
   tagline: "Sua academia de bairro",
-  whatsapp: "5511999999999", // formato internacional sem +
+  whatsapp: "5584996926834", // formato internacional sem +
   whatsappMessage: "Olá! Quero saber mais sobre os planos da Power Fit.",
   phone: "(84) 99692-6834",
   address: "Rua das Flores, 123 — Bairro Central, São Paulo - SP",
