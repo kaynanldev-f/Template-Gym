@@ -1,5 +1,5 @@
 import { gymConfig, whatsappLink } from "../../config/gymConfig";
-import { MessageCircle, Phone } from "lucide-react";
+import { MessageCircle, Phone, CircleFadingPlus, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -46,14 +46,18 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="h-10 w-10 rounded-full bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground flex items-center justify-center transition-smooth"
-              ></a>
+              >
+                <CircleFadingPlus></CircleFadingPlus>
+              </a>
               <a
                 href={gymConfig.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
                 className="h-10 w-10 rounded-full bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground flex items-center justify-center transition-smooth"
-              ></a>
+              >
+                <Mail></Mail>
+              </a>
             </div>
           </div>
         </div>
