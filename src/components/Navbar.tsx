@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import { gymConfig, whatsappLink } from "../config/gymConfig";
 import { Menu, X } from "lucide-react";
-import Button from "./Button";
+import ButtonPrimary from "./ButtonPrimary";
 
 const links = [
   { label: "Sobre", href: "#sobre" },
@@ -49,11 +49,11 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <Button>
+          <ButtonPrimary>
             <a href={whatsappLink()} target="_blank" rel="noopener noreferrer">
               Matricule-se
             </a>
-          </Button>
+          </ButtonPrimary>
         </nav>
         <button
           className="md:hidden text-primary-foreground p-2"
@@ -76,7 +76,7 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
-            <Button>
+            <ButtonPrimary>
               <a
                 href={whatsappLink()}
                 target="_blank"
@@ -84,7 +84,7 @@ export default function Navbar() {
               >
                 Matricule-se no WhatsApp
               </a>
-            </Button>
+            </ButtonPrimary>
           </nav>
         </div>
       )}

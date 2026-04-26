@@ -9,7 +9,7 @@ export default function Location() {
           <span className="text-accent font-bold uppercase tracking-wider text-sm">
             Localização
           </span>
-          <h2 className="text-4xl md:text-5xl mt-3 text-primary">
+          <h2 className="text-4xl md:text-5xl mt-3 font-bold text-primary">
             Venha nos visitar
           </h2>
         </div>

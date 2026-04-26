@@ -10,7 +10,7 @@ export default function About() {
           <span className="text-accent font-bold uppercase tracking-wider text-sm">
             Sobre nós
           </span>
-          <h2 className="text-4xl md:text-5xl mt-3 mb-6 text-primary">
+          <h2 className="text-4xl font-bold md:text-5xl mt-3 mb-6 text-primary">
             {gymConfig.about.title}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">

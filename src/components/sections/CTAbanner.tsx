@@ -1,6 +1,6 @@
 import { whatsappLink } from "../../config/gymConfig";
 import { MessageCircle } from "lucide-react";
-import Button from "../Button";
+import ButtonPrimary from "../ButtonPrimary";
 
 interface CTABannerProps {
   title: string;
@@ -21,11 +21,11 @@ export default function CTAbanner({
         className="absolute inset-0 opacity-10"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 20% 50%, hsl(var(--accent)) 0%, transparent 50%), radial-gradient(circle at 80% 50%, hsl(var(--accent)) 0%, transparent 50%)",
+            "radial-gradient(circle at 20% 50%,  #f5b400 0%, transparent 50%), radial-gradient(circle at 80% 50%,  #f5b400 0%, transparent 50%)",
         }}
       />
       <div className="container mx-auto px-4 text-center relative z-10">
-        <h2 className="text-3xl md:text-5xl text-primary-foreground mb-4 max-w-3xl mx-auto">
+        <h2 className="text-3xl md:text-5xl text-primary-foreground font-bold mb-4 max-w-3xl mx-auto">
           {title}
         </h2>
         {subtitle && (
@@ -33,8 +33,9 @@ export default function CTAbanner({
             {subtitle}
           </p>
         )}
-        <Button>
+        <ButtonPrimary moreClass="bg-button">
           <a
+            className="flex items-center"
             href={whatsappLink(message)}
             target="_blank"
             rel="noopener noreferrer"
@@ -42,7 +43,7 @@ export default function CTAbanner({
             <MessageCircle className="mr-2 h-6 w-6" />
             {buttonText}
           </a>
-        </Button>
+        </ButtonPrimary>
       </div>
     </section>
   );

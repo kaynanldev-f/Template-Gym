@@ -1,6 +1,6 @@
 import { gymConfig, whatsappLink } from "../../config/gymConfig";
 import { MessageCircle, ChevronDown, Star, Users, Trophy } from "lucide-react";
-import Button from "../Button";
+import ButtonPrimary from "../ButtonPrimary";
 export default function Hero() {
   const words = gymConfig.hero.headline.split(" ");
   const lastWord = words.slice(-1)[0];
@@ -32,7 +32,7 @@ export default function Hero() {
         className="absolute inset-0 opacity-[0.07]"
         style={{
           backgroundImage:
-            "linear-gradient(hsl(var(--accent)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--accent)) 1px, transparent 1px)",
+            "linear-gradient( #f5b400 1px, transparent 1px), linear-gradient(90deg,  #f5b400 1px, transparent 1px)",
           backgroundSize: "60px 60px",
         }}
       />
@@ -57,7 +57,7 @@ export default function Hero() {
         >
           {firstWords}{" "}
           <span className="relative inline-block">
-            <span className="relative z-10 bg-gradient-to-r from-accent via-accent-glow to-accent bg-clip-text text-transparent">
+            <span className="relative z-10 bg-linear-to-r from-accent via-accent-glow to-accent bg-clip-text text-transparent">
               {lastWord}
             </span>
             <span className="absolute bottom-1 left-0 w-full h-3 md:h-4 bg-accent/30 -skew-x-6 -z-0" />
@@ -77,15 +77,20 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 items-center justify-center animate-fade-up"
           style={{ animationDelay: "0.3s" }}
         >
-          <Button>
-            <a href={whatsappLink()} target="_blank" rel="noopener noreferrer">
+          <ButtonPrimary>
+            <a
+              className="flex gap-1 items-center"
+              href={whatsappLink()}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <MessageCircle className="mr-2 h-6 w-6" />
               {gymConfig.hero.cta}
             </a>
-          </Button>
-          <Button variant="bg-transparent border-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground backdrop-blur-sm">
+          </ButtonPrimary>
+          <ButtonPrimary>
             <a href="#planos">Ver planos</a>
-          </Button>
+          </ButtonPrimary>
         </div>
 
         {/* Social proof stats */}
@@ -115,7 +120,7 @@ export default function Hero() {
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-10" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-background to-transparent z-10" />
 
       {/* Scroll indicator */}
       <a

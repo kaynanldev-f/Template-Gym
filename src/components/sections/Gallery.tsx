@@ -9,7 +9,7 @@ export default function Gallery() {
           <span className="text-accent font-bold uppercase tracking-wider text-sm">
             Galeria
           </span>
-          <h2 className="text-4xl md:text-5xl mt-3 text-primary">
+          <h2 className="text-4xl md:text-5xl mt-3 font-bold text-primary">
             Conheça nosso espaço
           </h2>
         </Reveal>

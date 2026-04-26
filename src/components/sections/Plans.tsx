@@ -13,7 +13,7 @@ export default function Plans() {
           <span className="text-accent font-bold uppercase tracking-wider text-sm">
             Planos
           </span>
-          <h2 className="text-4xl md:text-5xl mt-3 mb-4">
+          <h2 className="text-4xl font-bold md:text-5xl mt-3 mb-4">
             Escolha o plano ideal pra você
           </h2>
           <p className="text-primary-foreground/70 text-lg">
@@ -27,7 +27,7 @@ export default function Plans() {
               key={plan.name}
               className={`relative rounded-2xl p-8 transition-bounce hover:-translate-y-2 ${
                 plan.featured
-                  ? "bg-accent text-accent-foreground shadow-accent-glow scale-105"
+                  ? "bg-accent text-accent-foreground shadow-accent scale-105"
                   : "bg-primary-glow/50 backdrop-blur border border-primary-foreground/10"
               }`}
             >
